@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository has all the code necessary for starting a React on Rails application with Redux including testing. To get started, just clone the repository down and get started using
+React on Rails like you normally would.
 
-Things you may want to cover:
+## Areas in the Boilerplate to Update
+Be sure to search `boilerplate` within your project and update any references to boilerplate with the name of your application. If you do not follow this step, your application may not behave the way that you expect it to.
 
-* Ruby version
+## Technologies
+* Rails
+* React
+* Redux
+* React Router
+* Karma/Jasmine testing
 
-* System dependencies
+## Setup
+To get set up, run the following
 
-* Configuration
+```no-highlight
+  bundle
+  rake db:create
+  rails s
+```
 
-* Database creation
+In a separate terminal tab, run:
 
-* Database initialization
+```no-highlight
+  yarn
+  yarn start
+```
 
-* How to run the test suite
+And navigate to `localhost:3000`.
 
-* Services (job queues, cache servers, search engines, etc.)
+To run your ruby tests, run `rake` or `rspec`.
 
-* Deployment instructions
-
-* ...
+To run your Enzyme tests, run `yarn test`.
